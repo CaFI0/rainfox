@@ -1,8 +1,8 @@
 /*   /   /  //   /    /  /     /  /    /   /       /   
 /______   / / __    /   _____ .. /. ___  ___  /   /   /
 |      \.--.-(ЖЖ)-----./  __/ ЖЖЖЖЖ \  \/  / /  5.3  / 
-|      /     |  |  .  |   _| ЖЖЖЖЖЖЖ /    /  2019-2022 
-|__|\__\___._|__|__|__|__|      J   /__/\__\      /   /
+|      /     |  |  .  |   _| ЖЖЖЖЖЖЖ /    /  2019-2023 
+|__|\__\___._|__|__|__|__|    ЖЖЖЖЖ /__/\__\      /   /
   --  info and updates: github.com/1280px/rainfox  --  
 
 To disable/enable some part of the style, add/remove "/* " before its @import. Example:
@@ -65,7 +65,7 @@ To disable/enable some part of the style, add/remove "/* " before its @import. E
 
 
 /* ###   Hourglass Tabs Loading Animation   ### */
-@import "userChromeHourglassLoading.css";
+/* @import "userChromeHourglassLoading.css";
 
 
 /* ###   Autohide Tab Names until Hovered   ### */
@@ -76,14 +76,14 @@ To disable/enable some part of the style, add/remove "/* " before its @import. E
 
 
 /* ###  Centered Autohide Bookmark Toolbar  ### */
-@import "userChromeBookmarks.css";
+/* @import "userChromeBookmarks.css";
 
 
 /* ### ###  Menubar Animation & Shadow  ### ### */
 @import "userChromeMenubar.css";
 
 
-/* ### ###   Navigation Btns Features   ### ### */
+/* ### ###   Navigation Butons Features   ### ### */
 @import "userChromeNavButtons.css";
 
 
@@ -93,3 +93,49 @@ To disable/enable some part of the style, add/remove "/* " before its @import. E
 
 /* ### ###     Small URLbar Changes     ### ### */
 @import "userChromeURLbar.css";
+
+
+
+/* ### ###      Other Changes        ### ### */
+
+
+
+/* userChromeContextMenus.css | file:///C:/Users/chris/AppData/Roaming/Mozilla/Firefox/Profiles/cw236765.default-nightly-1646516420655/chrome/userChromeContextMenus.css */
+
+.popup-internal-box, #PopupSearchAutoComplete > *, .menupopup-arrowscrollbox {
+    /* padding: 4px 0 !important; */
+    padding: 4px 6px !important;
+}
+
+
+/* panelUI-shared.css | chrome://browser/skin/customizableui/panelUI-shared.css */
+
+#appMenu-popup .panel-banner-item, #appMenu-popup .addon-banner-item {
+    align-items: flex-start;
+    align-items: center !important;
+}
+
+
+/* panelUI-shared.css | chrome://browser/skin/customizableui/panelUI-shared.css */
+
+#appMenu-popup .panel-banner-item, #appMenu-popup .addon-banner-item {
+    /* align-items: flex-start; */
+    /* margin-bottom: 4px !important; */
+    align-items: center;
+    margin-bottom: 4px !important;
+}
+
+/* userChrome.css | file:///C:/Users/chris/AppData/Roaming/Mozilla/Firefox/Profiles/cw236765.default-nightly-1646516420655/chrome/userChrome.css */
+
+#appMenu-popup .panel-banner-item, #appMenu-popup .addon-banner-item {
+    align-items: flex-start;
+}
+
+/* userChromePanels.css | file:///C:/Users/chris/AppData/Roaming/Mozilla/Firefox/Profiles/cw236765.default-nightly-1646516420655/chrome/userChromePanels.css */
+
+.addon-banner-item, .panel-banner-item, #appMenu-fxa-status2:not([fxastatus="signedin"]) {
+    /* margin: 0px 8px 4px !important; */
+    margin: 2px 4px 4px !important;
+}
+
+

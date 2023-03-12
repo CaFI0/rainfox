@@ -48,13 +48,15 @@ menuitem[checked="true"] > .menu-iconic-left {
 
 /* security panel icons */
 .identity-popup-security-connection {
-	background-image: url(".icon/urlbar-s-insecure.svg") !important; -moz-context-properties: fill, stroke !important;
-	stroke: var(--buttons-destructive-bgcolor) !important; }
+	background-image: url(".icon/urlbar-s-insecure.svg") !important;
+	-moz-context-properties: fill, stroke !important;
+	stroke: var(--buttons-destructive-bgcolor) !important; background-repeat: no-repeat !important; }
 #identity-popup[ciphers="weak"] .identity-popup-security-connection, #identity-popup[mixedcontent~="passive-loaded"][isbroken] .identity-popup-security-connection {
 	background-image: url(".icon/urlbar-s-weak.svg") !important; -moz-context-properties: fill, stroke !important; 
 	fill: color-mix(in srgb, currentColor 70%, #fff0) !important; stroke: color-mix(in srgb, currentColor 70%, #fff0) !important; }
 #identity-popup[connection^="secure"] .identity-popup-security-connection {
 	background-image: url(".icon/urlbar-s-secure.svg") !important;
+    background-repeat: no-repeat !important;
 }
 
 /* permission icons */
@@ -304,3 +306,21 @@ list-style-image: url(".icon/folder.svg") !important; }
 	background-image: url(".icon/delete.svg") !important; }
 .button-add {
 	background-image: url(".icon/newtab.svg") !important; }
+
+
+/* unified extension button */
+#unified-extensions-button {
+	list-style-image: url(".icon/addon.svg") !important;
+}
+
+/* logins shortcut button */
+#logins-button {
+	list-style-image: url(".icon/password.svg") !important;
+}
+
+.unified-extensions-item-menu-button.subviewbutton {
+	list-style-image: url(".icon/settings.svg") !important;
+	margin-inline-end: var(--arrowpanel-menuitem-margin-inline);
+	padding: var(--arrowpanel-menuitem-padding-inline) !important;
+	background-color: transparent;
+}
